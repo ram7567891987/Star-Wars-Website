@@ -8,7 +8,10 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-sky-500: oklch(68.5% 0.169 237.323);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --spacing: 0.25rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
@@ -168,6 +171,12 @@
   .table {
     display: table;
   }
+  .min-h-5 {
+    min-height: calc(var(--spacing) * 5);
+  }
+  .min-w-250 {
+    min-width: calc(var(--spacing) * 250);
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -177,9 +186,6 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
   }
   .bg-sky-500 {
     background-color: var(--color-sky-500);
@@ -192,12 +198,26 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+  .text-red-500 {
+    color: var(--color-red-500);
+  }
   .underline {
     text-decoration-line: underline;
   }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+}
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
   }
 }
 @property --tw-border-style {
