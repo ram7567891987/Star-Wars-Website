@@ -12,8 +12,11 @@
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header Section -->
-    <header class="font-raleway flex justify-between mx-20 my-8">
+  <div class="relative bg-[url(/assets/img/header-img.jpg)] h-screen bg-cover">
+    
+    <div class="absolute inset-x-0 bottom-0 h-3/3 bg-gradient-to-b from-transparent to-black"></div>
+
+    <header class="relative z-10 font-raleway flex justify-between mx-20 py-8 text-white">
       <h1 class="font-bold text-2xl">Infinity Seekers</h1>
       <nav class="text-lg flex items-center">
         <a href="#" class="mx-2" target="_blank">Home</a>
@@ -28,5 +31,8 @@
         <a class="px-2.5" href="#">Register</a>
       </div>
     </header>
+  </div>
+
+  <div class="h-screen bg-black"></div>
 </body>
 </html>
