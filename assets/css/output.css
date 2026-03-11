@@ -266,6 +266,9 @@
   .bg-\[url\(\'\.\.\/img\/header-img\.jpg\'\)\] {
     background-image: url('../img/header-img.jpg');
   }
+  .bg-\[url\(\'\.\.\/img\/hero\.jpg\'\)\] {
+    background-image: url('../img/hero.jpg');
+  }
   .bg-\[url\(\'\/assets\/img\/header-img\.jpg\'\)\] {
     background-image: url('/assets/img/header-img.jpg');
   }
