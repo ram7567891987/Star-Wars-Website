@@ -15,8 +15,3 @@
 @theme {
     --font-raleway: "Raleway", sans-serif;
 }
-
-@theme {
-  --background-image-header: url('/assets/img/header-img.jpg');
-}
-
