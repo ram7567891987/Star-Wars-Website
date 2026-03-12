@@ -1,59 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Infinity Seekers</title>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Tailwind CSS -->
-    <link href="./assets/css/output.css" rel="stylesheet">
-</head>
-<body>
-  
-  <!-- Header section -->
-  <div class="relative bg-[url('../img/hero.jpg')] min-h-screen bg-cover flex flex-col">
-    
-    <div class="absolute inset-0 bg-linear-to-b from-transparent to-black"></div>
-    <header class="relative z-10 font-raleway flex justify-between mx-20 py-8 text-white">
-      <h1 class="font-bold text-2xl">Infinity Seekers</h1>
-      <nav class="text-lg flex items-center font-medium">
-        <a href="#" class="mx-2" target="_blank">Home</a>
-        <a href="#" class="mx-2" target="_blank">Our history</a>
-        <a href="#" class="mx-2" target="_blank">Services</a>
-        <a href="#" class="mx-2" target="_blank">Book now</a>
-      </nav>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <div
+      class="relative bg-[url('../img/hero.jpg')] min-h-screen bg-cover flex flex-col"
+    >
+      <div
+        class="absolute inset-0 bg-linear-to-b from-transparent to-black"
+      ></div>
+      <header
+        class="relative z-10 font-raleway flex justify-between mx-20 py-8 text-white"
+      >
+        <h1 class="font-bold text-2xl">Infinity Seekers</h1>
+        <nav class="text-lg flex items-center font-medium">
+          <a href="#" class="mx-2" target="_blank">Home</a>
+          <a href="#" class="mx-2" target="_blank">Our history</a>
+          <a href="#" class="mx-2" target="_blank">Services</a>
+          <a href="#" class="mx-2" target="_blank">Book now</a>
+        </nav>
 
-      <div class="relative z-10 flex items-center text-lg font-normal">
-        <a class="px-2.5" href="#">Login</a>
-        <span class="font-thin text-3xl">/</span>
-        <a class="px-2.5" href="#">Register</a>
-      </div>
-    </header>
-    
-    <!-- Hero Section -->
-      <div class= "relative z-10 text-white my-42 mx-48">
-        <h2 class="text-left font-raleway text-5xl max-w-[550px] leading-tight">Embark on an <span class="font-bold">Interstellar Odyssey </span> in a Galaxy Far, Far Away.</h2>
-        <p class="text-left max-w-md">Welcome to a galaxy of limitless possibilities, where the stars are your waypoints and adventure knows no bounds. Are you ready to embark on an interstellar odyssey in a galaxy far, far away?</p>
-        <!-- Button -->
-        <button class="my-10 py-5 px-16 text-base rounded-full font-bold bg-[#8c1111FF]">Book Your Galactic Adventure</button>
-      </div>
-  
-  </div>
-  
-  <!-- Statistics section -->
-  <div class="bg-black relative py-20 flex justify-center pr-75">
-    <div class="flex items-center">
-      <!-- Stat img -->
-      <div class="w-76.5 h-138 bg-[url('../img/info.jpg')] bg-cover bg-center block relative z-2 right-60 rounded-xl"></div>
-        <!-- Stat Info -->
-        <div class="bg-[#262626FF] h-[88%] w-[stretch] rounded-l-2xl absolute z-1 grow">
-
+        <div class="relative z-10 flex items-center text-lg font-normal">
+          <a class="px-2.5" href="#">Login</a>
+          <span class="font-thin text-3xl">/</span>
+          <a class="px-2.5" href="#">Register</a>
         </div>
-      
+      </header>
+
+      <!-- Hero Section -->
+      <div class="relative z-10 text-white my-42 mx-48">
+        <h2 class="text-left font-raleway text-5xl max-w-137.5 leading-tight">
+          Embark on an <span class="font-bold">Interstellar Odyssey </span> in a
+          Galaxy Far, Far Away.
+        </h2>
+        <p class="text-justify max-w-127.5 text-lg pt-5">
+          Welcome to a galaxy of limitless possibilities, where the stars are
+          your waypoints and adventure knows no bounds. Are you ready to embark
+          on an interstellar odyssey in a galaxy far, far away?
+        </p>
+        <!-- Button -->
+        <button
+          class="my-10 py-5 px-16 text-base rounded-full font-bold bg-[#8c1111FF]"
+        >
+          Book Your Galactic Adventure
+        </button>
+      </div>
     </div>
-  </div>
-</body>
+
+    <!-- Statistics section -->
+    <div class="bg-black relative py-20 flex justify-center pr-75">
+      <div class="flex items-center">
+        <!-- Stat img -->
+        <div
+          class="w-65 h-125 bg-[url('../img/info.jpg')] bg-cover bg-center block relative z-2 right-60 rounded-xl"
+        ></div>
+        <div
+          class="bg-[#262626FF] h-[88%] w-[stretch] rounded-l-2xl absolute z-1 grow"
+        >
+          <!-- Stat Info -->
+          <div class="pt-20 px-20 flex flex-col justify-center text-white">
+            <!-- Stat Title -->
+             <h2 class="text-center text-2xl pb-4 uppercase font-raleway">You Only Have One Life, <span class="font-bold">Why Not Explore the Cosmos?</span></h2>
+            <p class="text-center leading-[1.2] mx-auto max-w-114.75 text-lg">
+              <!-- max-w-112.5 -->
+              At our spacefaring agency, we invite you to embark on an
+              extraordinary journey that transcends the boundaries of your
+              wildest dreams.
+            </p>
+
+            <!-- Statistics -->
+            <div class="flex justify-center py-15 gap-19">
+              <!-- Stat Items -->
+              <div class="text-center">
+                <div class="text-5xl font-bold">9000+</div>
+                <div class="py-2.5 max-w-38.75">Customer Satisfaction rate</div>
+              </div>
+              <div class="text-center">
+                <div class="text-5xl font-bold">97%</div>
+                <div class="py-2.5 max-w-38.75">Customer Satisfaction</div>
+              </div>
+              <div class="text-center">
+                <div class="text-5xl font-bold">1000+</div>
+                <div class="py-2.5 max-w-38.75">
+                  Years of Space Travel Expertise
+                </div>
+              </div>
+            </div>
+            <!-- </Statistics> -->
+            <div class="flex justify-center">
+              <button
+                class="py-5 px-20 rounded-full font-bold bg-[#8c1111FF] text-lg max-w-90"
+              >
+                Discover Our Story
+              </button>
+            </div>
+          </div>
+          <!-- </Stat Info> -->
+        </div>
+      </div>
+    </div>
+    <!-- </Statistics section> -->
+  </body>
 </html>
