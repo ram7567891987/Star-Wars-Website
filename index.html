@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <!-- Tailwind CSS -->
@@ -46,7 +46,9 @@
           Embark on an <span class="font-bold">Interstellar Odyssey </span> in a
           Galaxy Far, Far Away.
         </h2>
-        <p class="text-justify max-w-127.5 text-lg pt-5">
+        <p
+          class="text-justify max-w-143.75 text-lg pt-5 font-poppins leading-[1.2]"
+        >
           Welcome to a galaxy of limitless possibilities, where the stars are
           your waypoints and adventure knows no bounds. Are you ready to embark
           on an interstellar odyssey in a galaxy far, far away?
@@ -65,7 +67,7 @@
       <div class="flex items-center">
         <!-- Stat img -->
         <div
-          class="w-65 h-125 bg-[url('../img/info.jpg')] bg-cover bg-center block relative z-2 right-60 rounded-xl"
+          class="w-65 h-125 bg-[url('../img/info.jpg')] bg-cover bg-center block relative z-2 right-55 rounded-xl"
         ></div>
         <div
           class="bg-[#262626FF] h-[88%] w-[stretch] rounded-l-2xl absolute z-1 grow"
@@ -73,8 +75,17 @@
           <!-- Stat Info -->
           <div class="pt-20 px-20 flex flex-col justify-center text-white">
             <!-- Stat Title -->
-             <h2 class="text-center text-2xl pb-4 uppercase font-raleway">You Only Have One Life, <span class="font-bold">Why Not Explore the Cosmos?</span></h2>
-            <p class="text-center leading-[1.2] mx-auto max-w-114.75 text-lg">
+            <h2 class="text-center text-2xl uppercase font-raleway">
+              You Only Have One Life
+            </h2>
+            <h2
+              class="font-bold text-2xl pb-4 uppercase font-raleway text-center"
+            >
+              Why Not Explore the Cosmos?
+            </h2>
+            <p
+              class="text-center leading-[1.2] mx-auto max-w-114.75 text-lg font-poppins"
+            >
               <!-- max-w-112.5 -->
               At our spacefaring agency, we invite you to embark on an
               extraordinary journey that transcends the boundaries of your
@@ -99,19 +110,58 @@
                 </div>
               </div>
             </div>
-            <!-- </Statistics> -->
+            <!-- /Statistics -->
             <div class="flex justify-center">
               <button
-                class="py-5 px-20 rounded-full font-bold bg-[#8c1111FF] text-lg max-w-90"
+                class="py-4 px-15 rounded-full font-bold bg-[#8c1111FF] text-lg max-w-90"
               >
                 Discover Our Story
               </button>
             </div>
           </div>
-          <!-- </Stat Info> -->
+          <!-- /Stat Info -->
         </div>
       </div>
     </div>
-    <!-- </Statistics section> -->
+    <!-- /Statistics section -->
+
+    <!-- History Section -->
+    <div class="bg-black py-64.25 text-white">
+      <!-- History Title -->
+      <h2 class="text-center text-5xl font-bold pb-12">Our History</h2>
+      <!-- History Content -->
+      <div class="flex justify-center flex-col">
+        <!-- History img -->
+        <div
+          class="bg-[url('../img/info-2.jpg')] bg-cover bg-center h-113 w-246 rounded-2xl mx-auto"
+        ></div>
+        <div class="flex max-w-243.75 mx-auto text-justify py-7.25">
+          <div>
+            <p class="text-[32px] font-raleway pb-2">
+              “In the vast expanse of space, our dreams become the universe's
+              reality.”
+            </p>
+            <p class="text-[18px] font-semibold font-raleway">
+              - Dr. Amelia Carson
+            </p>
+          </div>
+          <p class="max-w-[62%] pl-6 py-2 font-poppins">
+            Founded by visionary women scientists,
+            <span class="font-bold">Dr. Amelia Carson</span>
+            <span class="font-bold">and Dr. Emily Reynolds</span>, our
+            spacefaring enterprise had its beginnings in a small laboratory
+            where these brilliant minds first crossed paths. Sharing a deep
+            passion for unraveling the mysteries of the cosmos, they embarked on
+            a journey of exploration that led to groundbreaking discoveries in
+            space travel technology. Over the years, their work expanded into a
+            mission to make the wonders of the universe accessible to all.
+            Today, their dream has evolved into a leading intergalactic travel
+            agency, offering unforgettable adventures through the stars.
+          </p>
+        </div>
+      </div>
+      <!-- /History Content -->
+    </div>
+    <!-- /History Section -->
   </body>
 </html>
