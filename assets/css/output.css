@@ -931,6 +931,21 @@
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
+  .md\:col-span-1 {
+    @media (width >= 48rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
+  .md\:row-span-1 {
+    @media (width >= 48rem) {
+      grid-row: span 1 / span 1;
+    }
+  }
+  .md\:row-span-2 {
+    @media (width >= 48rem) {
+      grid-row: span 2 / span 2;
+    }
+  }
   .md\:mx-29\.25 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 29.25);
@@ -949,6 +964,11 @@
   .md\:max-w-106\.25 {
     @media (width >= 48rem) {
       max-width: calc(var(--spacing) * 106.25);
+    }
+  }
+  .md\:grid-cols-\[repeat\(auto-fit\)\] {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(auto-fit);
     }
   }
   .md\:grid-cols-\[repeat\(auto-fit\,minmax\(1fr\)\)\] {
@@ -1008,6 +1028,11 @@
     @media (width >= 48rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .xl\:row-span-2 {
+    @media (width >= 80rem) {
+      grid-row: span 2 / span 2;
     }
   }
   .xl\:mx-48 {
