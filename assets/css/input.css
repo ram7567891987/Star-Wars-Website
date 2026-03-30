@@ -16,3 +16,9 @@
     --font-raleway: "Raleway", sans-serif;
     --font-poppins: "Poppins", sans-serif; 
 }
+
+@layer components {
+    .title-res-size {
+        @apply md:text-4xl xl:text-5xl;
+    }
+}

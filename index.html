@@ -14,7 +14,7 @@
     <!-- Tailwind CSS -->
     <link href="./assets/css/output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-black">
     <!-- Header section -->
     <div
     class="relative bg-[url('../img/hero.jpg')] min-h-screen bg-cover bg-center flex flex-col"
@@ -76,37 +76,38 @@
           <!-- Stat Info -->
           <div class="pt-20 px-20 flex flex-col justify-center text-white">
             <!-- Stat Title -->
-            <h2 class="text-center text-2xl uppercase font-raleway">
-              You Only Have One Life
-            </h2>
-            <h2
-              class="font-bold text-2xl pb-4 uppercase font-raleway text-center"
-            >
-              Why Not Explore the Cosmos?
-            </h2>
+             <div class="md:text-lg xl:text-2xl">
+               <h2 class="text-center uppercase font-raleway max-w-103.75 mx-auto pb-4 md:text-lg xl:text-2xl">
+                 You Only Have One Life <span class="font-bold"> Why Not Explore the Cosmos?</span>
+               </h2>
+               <h2
+                 class=""
+               >
+                
+               </h2>
+             </div>
             <p
-              class="text-center leading-[1.2] mx-auto max-w-114.75 text-lg font-poppins"
+              class="text-center mx-auto max-w-114.75 font-poppins md:text-sm xl:text-lg"
             >
-              <!-- max-w-112.5 -->
               At our spacefaring agency, we invite you to embark on an
               extraordinary journey that transcends the boundaries of your
               wildest dreams.
             </p>
 
             <!-- Statistics -->
-            <div class="flex justify-center py-15 gap-19">
+            <div class="flex justify-center gap-19 flex-wrap sm:gap-3.75 md:py-9 xl:py-15">
               <!-- Stat Items -->
               <div class="text-center">
-                <div class="text-5xl font-bold">9000+</div>
-                <div class="py-2.5 max-w-38.75">Customer Satisfaction rate</div>
+                <div class="font-bold sm:text-3xl md:text-4xl xl:text-5xl">9000+</div>
+                <div class="py-2.5 max-w-38.75 md:text-sm xl:text-lg">Customer Satisfaction rate</div>
               </div>
               <div class="text-center">
-                <div class="text-5xl font-bold">97%</div>
-                <div class="py-2.5 max-w-38.75">Customer Satisfaction</div>
+                <div class="font-bold sm:text-3xl md:text-4xl xl:text-5xl">97%</div>
+                <div class="py-2.5 max-w-38.75 md:text-sm xl:text-lg">Customer Satisfaction</div>
               </div>
               <div class="text-center">
-                <div class="text-5xl font-bold">1000+</div>
-                <div class="py-2.5 max-w-38.75">
+                <div class="font-bold sm:text-3xl md:text-4xl xl:text-5xl">1000+</div>
+                <div class="py-2.5 max-w-38.75 md:text-sm xl:text-lg">
                   Years of Space Travel Expertise
                 </div>
               </div>
@@ -114,7 +115,7 @@
             <!-- /Statistics -->
             <div class="flex justify-center">
               <button
-                class="py-4 px-15 rounded-full font-bold bg-[#8c1111FF] text-lg max-w-90"
+                class="py-4 px-15 rounded-full font-bold bg-[#8c1111FF] max-w-90 text-lg"
               >
                 Discover Our Story
               </button>
@@ -129,24 +130,22 @@
     <!-- History Section -->
     <div class="bg-black pb-64.25 text-white">
       <!-- History Title -->
-      <h2 class="text-center text-5xl font-bold pb-12">Our History</h2>
+      <h2 class="text-center font-bold pb-12 title-res-size">Our History</h2>
       <!-- History Content -->
       <div class="flex justify-center flex-col">
         <!-- History img -->
-        <div
-          class="bg-[url('../img/info-2.jpg')] bg-cover bg-center h-113 w-full max-w-246 max-h-113 rounded-2xl mx-auto"
-        ></div>
-        <div class="flex max-w-243.75 mx-auto text-justify py-7.25">
+        <img src="./assets/img/info-2.jpg" class="object-cover h-113 w-full max-w-246 max-h-113 rounded-2xl mx-auto px-10" alt="">
+        <div class="flex max-w-243.75 mx-auto text-justify py-7.25 px-10">
           <div>
-            <p class="text-[32px] font-raleway pb-2">
+            <p class="font-raleway pb-2 md:text-xl xl:text-[32px]">
               “In the vast expanse of space, our dreams become the universe's
               reality.”
             </p>
-            <p class="text-[18px] font-semibold font-raleway">
+            <p class="font-semibold font-raleway md:text-sm xl:text-lg">
               - Dr. Amelia Carson
             </p>
           </div>
-          <p class="max-w-[62%] pl-6 py-2 font-poppins">
+          <p class="max-w-[62%] pl-6 py-2 font-poppins md:text-sm xl:text-base">
             Founded by visionary women scientists,
             <span class="font-bold">Dr. Amelia Carson</span>
             <span class="font-bold">and Dr. Emily Reynolds</span>, our
@@ -167,10 +166,10 @@
 
     <!-- Card Section -->
       <div class="bg-black pb-64.25 text-white">
-        <h2 class="text-center text-5xl font-bold pb-12 font-raleway">Services We Offer</h2>
+        <h2 class="text-center font-bold pb-12 font-raleway title-res-size">Services We Offer</h2>
 
         <!-- Card Items -->
-        <div class="grid grid-cols-[2fr_1fr_1fr] gap-5 grid-flow-row-dense mx-auto h-150 max-w-250">
+        <div class="grid gap-5 grid-flow-row-dense mx-auto h-150 max-w-250 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] xl:grid-cols-[1.5fr_1fr_1fr] ">
           
           <div class="bg-[url('../img/blog-1.jpg')] bg-cover bg-center w-full h-full col-span-1 row-span-3 rounded-lg hover:brightness-80 transition hover:scale-103 duration-300">
             <p class="font-bold font-poppins px-5 py-4 text-2xl relative z-10">Interstellar Voyages</p>
@@ -191,7 +190,7 @@
     <!-- Feedback Section -->
       <div class="bg-black pb-64.25 text-white">
         <!-- Feedback Title -->
-        <h2 class="text-center text-5xl font-bold pb-12 font-raleway">What our costumers say</h2>
+        <h2 class="text-center font-bold pb-12 font-raleway title-res-size">What our costumers say</h2>
 
         <!-- Feedback Item -->
         <div class="mx-auto flex justify-center gap-16 pt-15.5">
@@ -236,7 +235,7 @@
 
     <!-- Pricing Plans Section -->
     <div class="bg-black pb-32 text-white text-center font-poppins">
-      <h2 class="text-5xl font-semibold">Book your trip</h2>
+      <h2 class="font-semibold title-res-size">Book your trip</h2>
       <p class="pt-5.5 mx-auto max-w-133.75">Select your desired package, and let the adventure begin. May the Force be with you as you book your cosmic journey with us.</p>
       
       <!-- Pricing Item -->
