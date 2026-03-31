@@ -18,7 +18,28 @@
 }
 
 @layer components {
-    .title-res-size {
+    .title-res-size,
+    .card__price-size {
         @apply md:text-4xl xl:text-5xl;
     }
+
+    .subtitle-res-size,
+    .card__sub-size,
+    .card__list {
+        @apply md:text-sm xl:text-base;
+    }
+
+    .card__title-size {
+        @apply md:text-lg xl:text-2xl;
+    }
+
+    /* Email Section */
+    .email__btn {
+        @apply cursor-pointer border-2 border-transparent border-l-0 rounded-tr-full rounded-br-full pl-6 pr-8 text-black bg-white font-semibold;
+    }
+
+    .email__btn-hover {
+        @apply hover:bg-transparent hover:border-white hover:text-[#E0E0E0] hover:border-2 hover:border-l-0 transition duration-300;
+    }
+
 }

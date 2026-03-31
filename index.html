@@ -25,7 +25,7 @@
       <header
       class="relative z-10 font-raleway flex justify-between mx-20 py-8 text-white md:text-lg xl:text-2xl">
         <h1 class="font-bold flex items-center">Infinity Seekers</h1>
-        <nav class="flex items-center font-medium md:text-sm xl:text-lg">
+        <nav class="flex items-center font-medium sm:hidden md:hidden md:text-sm xl:flex xl:text-lg">
           <a href="#" class="mx-2" target="_blank">Home</a>
           <a href="#" class="mx-2" target="_blank">Our history</a>
           <a href="#" class="mx-2" target="_blank">Services</a>
@@ -132,10 +132,10 @@
       <!-- History Title -->
       <h2 class="text-center font-bold pb-12 title-res-size">Our History</h2>
       <!-- History Content -->
-      <div class="flex justify-center flex-col">
+      <div class="flex justify-center flex-col px-10">
         <!-- History img -->
-        <img src="./assets/img/info-2.jpg" class="object-cover h-113 w-full max-w-246 max-h-113 rounded-2xl mx-auto px-10" alt="">
-        <div class="flex max-w-243.75 mx-auto text-justify py-7.25 px-10">
+        <img src="./assets/img/info-2.jpg" class="object-cover h-113 w-full max-w-246 max-h-113 rounded-2xl mx-auto" alt="">
+        <div class="flex max-w-243.75 mx-auto text-justify py-7.25">
           <div>
             <p class="font-raleway pb-2 md:text-xl xl:text-[32px]">
               “In the vast expanse of space, our dreams become the universe's
@@ -193,7 +193,7 @@
         <h2 class="text-center font-bold pb-12 font-raleway title-res-size">What our costumers say</h2>
 
         <!-- Feedback Item -->
-        <div class="mx-auto flex justify-center gap-16 pt-15.5">
+        <div class="mx-auto flex justify-center gap-16 pt-15.5 flex-wrap">
           <!-- First Card -->
           <div class="w-75 h-112.5 bg-[#222226FF] rounded-lg">
             <img src="./assets/img/ava/ava-1-circle.png" alt="ava" class="w-33 h-33 relative mx-auto -inset-y-12.5 border-12 border-[#222226FF] rounded-full">
@@ -236,22 +236,22 @@
     <!-- Pricing Plans Section -->
     <div class="bg-black pb-32 text-white text-center font-poppins">
       <h2 class="font-semibold title-res-size">Book your trip</h2>
-      <p class="pt-5.5 mx-auto max-w-133.75">Select your desired package, and let the adventure begin. May the Force be with you as you book your cosmic journey with us.</p>
+      <p class="pt-5.5 mx-auto max-w-133.75 subtitle-res-size">Select your desired package, and let the adventure begin. May the Force be with you as you book your cosmic journey with us.</p>
       
       <!-- Pricing Item -->
-      <div class="flex justify-center pt-14.5 gap-4">
+      <div class="flex justify-center pt-14.5 gap-4 flex-wrap px-10">
 
         <!-- First Card -->
-        <div class="w-100 min-h-162.75 bg-[#222226FF] rounded-lg px-8 py-8 flex-col">
+        <div class="w-100 min-h-162.75 bg-[#222226FF] rounded-lg px-8 py-8 flex flex-col">
           <!-- Pricing Item Title -->
-          <h2 class="text-2xl font-bold">Basic Plan</h2>
+          <h2 class="card__title-size font-bold">Basic Plan</h2>
           <!-- Pricing Item Price -->
-          <h3 class="text-5xl pt-8 pb-6 font-bold">$2,999</h3>
+          <h3 class="card__price-size pt-8 pb-6 font-bold">$2,999</h3>
           <!-- Pricing Item Subtitle -->
-          <p class="mx-auto max-w-50">Rebel Alliance Adventure Package</p>
-          <p class="py-10 font-bold">Duration: 7 days</p>
+          <p class="card__sub-size mx-auto max-w-50">Rebel Alliance Adventure Package</p>
+          <p class="card__sub-size py-10 font-bold">Duration: 7 days</p>
           <!-- Pricing Item Marker List -->
-            <ul class="text-justify space-y-4 list-disc list-inside px-8.25">
+            <ul class="text-justify space-y-4 list-disc list-inside px-8.25 card__list">
               <li>Guided tour of iconic Star Wars locations</li>
               <li>Lightsaber training with a Jedi Master</li>
               <li>Meet and greet with Star Wars characters</li>
@@ -259,7 +259,7 @@
             </ul>
             <!-- Pricing Button -->
             <button
-            class="mt-19.5 py-4.5 px-17.5 text-base rounded-full font-bold bg-[#8c1111FF]"
+            class="mt-auto py-4.5 px-17.5 text-base rounded-full font-bold bg-[#8c1111FF]"
             >
             Book It Now
           </button>
@@ -267,16 +267,16 @@
         <!-- /First Card -->
 
         <!-- Second Card -->
-          <div class="w-100 min-h-162.75 bg-[#222226FF] rounded-lg px-8 py-8 flex-col">
+          <div class="w-100 min-h-162.75 bg-[#222226FF] rounded-lg px-8 py-8 flex flex-col">
           <!-- Pricing Item Title -->
-          <h2 class="text-2xl font-bold">Silver Plan</h2>
+          <h2 class="card__title-size font-bold">Silver Plan</h2>
           <!-- Pricing Item Price -->
-          <h3 class="text-5xl pt-8 pb-6 font-bold">$3,499</h3>
+          <h3 class="card__price-size pt-8 pb-6 font-bold">$3,499</h3>
           <!-- Pricing Item Subtitle -->
-          <p class="mx-auto max-w-50">Imperial Explorer Package</p>
-          <p class="py-10 font-bold">Duration: 10 days</p>
+          <p class="card__sub-size mx-auto max-w-50">Imperial Explorer Package</p>
+          <p class="card__sub-size py-10 font-bold">Duration: 10 days</p>
           <!-- Pricing Item Marker List -->
-            <ul class="text-justify space-y-4 list-disc list-inside px-8.25">
+            <ul class="text-justify space-y-4 list-disc list-inside px-8.25 card__list">
               <li>Visits to Imperial strongholds and secret bases</li>
               <li>Piloting your own starship</li>
               <li>Encounter with the Dark Side</li>
@@ -284,7 +284,7 @@
             </ul>
             <!-- Pricing Button -->
             <button
-            class="mt-25.5 py-4.5 px-17.5 text-base rounded-full font-bold bg-[#115d8cFF]"
+            class="mt-auto py-4.5 px-17.5 text-base rounded-full font-bold bg-[#115d8cFF]"
             >
             Book It Now
           </button>
@@ -292,16 +292,16 @@
         <!-- /Second Card -->
 
         <!-- Third Card -->
-          <div class="w-100 min-h-162.75 bg-[#222226FF] rounded-lg px-8 py-8 flex-col">
+          <div class="w-100 min-h-162.75 bg-[#222226FF] rounded-lg px-8 py-8 flex flex-col">
           <!-- Pricing Item Title -->
-          <h2 class="text-2xl font-bold">Gold Plan</h2>
+          <h2 class="card__title-size font-bold">Gold Plan</h2>
           <!-- Pricing Item Price -->
-          <h3 class="text-5xl pt-8 pb-6 font-bold">$4,999</h3>
+          <h3 class="card__price-size pt-8 pb-6 font-bold">$4,999</h3>
           <!-- Pricing Item Subtitle -->
-          <p class="mx-auto max-w-50">Jedi Knight Ultimate Experience</p>
-          <p class="py-10 font-bold">Duration: 14 days</p>
+          <p class="card__sub-size mx-auto max-w-50">Jedi Knight Ultimate Experience</p>
+          <p class="card__sub-size py-10 font-bold">Duration: 14 days</p>
           <!-- Pricing Item Marker List -->
-            <ul class="text-justify space-y-4 list-disc list-inside px-8.25">
+            <ul class="text-justify space-y-4 list-disc list-inside px-8.25 card__list">
               <li>In-depth lightsaber training and Jedi lessons</li>
               <li>Exploration of diverse Star Wars worlds</li>
               <li>Meetings with legendary Jedi Masters</li>
@@ -309,7 +309,7 @@
             </ul>
             <!-- Pricing Button -->
             <button
-            class="mt-13.5 py-4.5 px-17.5 text-base rounded-full font-bold bg-[#8c1111FF]"
+            class="mt-auto py-4.5 px-17.5 text-base rounded-full font-bold bg-[#8c1111FF]"
             >
             Book It Now
           </button>
@@ -324,9 +324,9 @@
 <!-- Footer Section -->
 <div class="bg-[#262626] text-white">
   <!-- Company info -->
-  <div class="flex justify-center gap-25 pt-20 pb-25">
+  <div class="flex justify-center pt-20 pb-25 px-10 flex-wrap sm:gap-10 md:gap-10 xl:gap-25">
     <div class="flex-col">
-      <h2 class="text-2xl font-bold font-raleway">Infinity Seekers</h2>
+      <h2 class="card__title-size font-bold font-raleway">Infinity Seekers</h2>
       <p class="text-sm font-poppins pb-7.25 pt-5 max-w-51.75">Where Imagination Meets the Universe</p>
       <!-- Footer Icons -->
       <div class="flex gap-6">
@@ -367,9 +367,15 @@
       <!-- Email Address -->
       <div class="flex flex-col gap-4 font-poppins">
         <h2 class="text-lg font-bold">Newsletter subscription</h2>
-          <form class="flex">
-            <input type="email" name="email" id="email" class="focus-visible:outline-none border-2 rounded-tl-full rounded-bl-full border-white py-4 px-8 pl-11.25 pr-40" placeholder="Enter your email">
-            <button type="submit" class="cursor-pointer border-2 border-transparent border-l-0 rounded-tr-full rounded-br-full pl-6 pr-8 text-black bg-white font-semibold hover:bg-transparent hover:border-white hover:text-[#E0E0E0] hover:border-2 hover:border-l-0 transition duration-300">Subscribe</button>
+          <form class="flex border-2 rounded-full rounded-bl-full border-white ">
+            <input 
+              type="email" 
+              name="email" id="email" 
+              placeholder="Enter your email"
+              class="bg-trasnparent py-4 pl-11.25 pr-2 grow focus-visible:outline-none w-[320px]">
+            <button 
+              type="submit" 
+              class="email__btn email__btn-hover">Subscribe</button>
           </form>
       </div>
 
